@@ -1,0 +1,33 @@
+ [
+      {  "id": 1,
+        "logoName": "Apple",
+        "imageURL": "https://i.postimg.cc/gjgBwRbn/brand-1.png"
+      },
+      {
+        "id": 2,
+        "logoName": "HP",
+        "imageURL": "https://i.postimg.cc/cCj7Kf14/brand-2.png"
+      },
+      {
+        "id": 3,
+        "logoName": "Samsung",
+        "imageURL": "https://i.postimg.cc/dtD5HhKj/brand-3.jpg"
+      },
+      {
+        "id": 4,
+        "logoName": "Lenovo",
+        "imageURL": "https://i.postimg.cc/6qPfJhNL/brand-4.jpg"
+      },
+      {
+        "id": 5,
+        "logoName": "Panasonic",
+        "imageURL": "https://i.postimg.cc/NMzH5fPQ/brand-5.png"
+      },
+      {
+        "id": 6,
+        "logoName": "Dell",
+        "imageURL": "https://i.postimg.cc/tChNmWMP/brand-6.webp"
+      }
+    ]
+  
+  
