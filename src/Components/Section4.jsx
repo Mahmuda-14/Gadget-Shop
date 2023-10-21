@@ -8,10 +8,9 @@ const Section4 = () => {
         <div>
             <h2 className=' items-center text-center text-3xl font-mono font-semibold'>Product Catagories</h2>
            
-
         </div>
         <hr  className='  mx-[32rem] my-10'/>
-        <div className='grid grid-cols-3 gap-10 mt-20 '>
+        <div className='grid sm:grid-cols-1 lg:grid-cols-3 gap-10 mt-20 '>
          <div className='w-[289px] h-[200px] mb-[123px]'>
             <div className='flex'>
                 <img className='w-[144px] h-[137px] shadow-xl rounded-xl' src={sec4} alt="" />

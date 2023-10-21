@@ -36,18 +36,34 @@ const Register = () => {
     }
 
 
-
-
-
     createUser(email, password)
       .then(result => {
         console.log(result.user)
         setSuccess('User Created Successfully.')
         toast('Registration Successfull');
+
+        const user = { email };
+        fetch('http://localhost:5000/user',{
+
+          method: 'POST',
+          headers: {
+            'content-type': 'application/json'
+          },
+          body: JSON.stringify(user)
+        })
+        .then(res => res.json())
+        .then(data => {
+          console.log(data);
+          // if(data.insertedId){
+          //   console.log('user added to the database')
+        // }
+        })
+
       })
       .catch(error => {
         console.error(error);
         setRegisterError(error.message);
+        
       })
 
   }
@@ -102,7 +118,7 @@ const Register = () => {
             success && <p className="text-green-600">{success}</p>
           }
         </div>
-
+        {/* // "methods": ["GET", "POST", "PATCH", "DELETE", "OPTIONS"] */}
 
 
         <p className="text-center mt-4">Already have an account? <Link className="text-blue-600 font-bold" to="/login">Login</Link></p>

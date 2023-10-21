@@ -21,21 +21,25 @@ const Banner = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="flex ml-[19rem]">
+          <div className="flex ml-[16rem]">
             <img src={slide1} alt="" />
-            <h2 className="font-extrabold text-4xl mt-[162px]">Gaming Consoles</h2>
+            <h2 className=" font-serif text-white text-6xl mt-[162px]">Gaming Consoles</h2>
+            <br />
+           
+            
+            
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex ml-[19rem]">
+          <div className="flex ml-[16rem]">
             <img src={slide2} alt="" />
-            <h2 className="font-bold text-4xl mt-[162px]">Adventure Cameras</h2>
+            <h2 className="font-serif text-white text-6xl mt-[162px]">Adventure Cameras</h2>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex ml-[19rem]">
+          <div className="flex ml-[16rem]">
             <img src={slide3} alt="" />
-            <h2 className="font-extrabold text-4xl mt-[162px]">Computer Equipment</h2>
+            <h2 className="font-serif text-white text-6xl mt-[162px]">Computer Equipment</h2>
           </div>
         </SwiperSlide>
       </Swiper>

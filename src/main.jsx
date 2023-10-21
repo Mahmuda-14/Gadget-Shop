@@ -17,6 +17,8 @@ import AddProduct from './Components/AddProduct';
 import SingleBrands from './Components/Brand/SingleBrands';
 import Details from './Components/Singledetail/Details';
 import Update from './Components/Update';
+import Carts from './Components/Cart/Carts';
+import Private from './Components/Private';
 
 
 
@@ -43,25 +45,31 @@ const router = createBrowserRouter([
 
       {
         path: '/add',
-        element: <AddProduct></AddProduct>
+        element: <Private><AddProduct></AddProduct></Private>
       },
 
       {
         path: '/brands/:brand',
         element: <SingleBrands></SingleBrands>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://brand-ass-10-server-cubouic43-mahmuda-sultanas-projects.vercel.app/products')
       },
 
       {
         path: '/products/:id',
-        element: <Details></Details>,
-        loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
+        element: <Private><Details></Details></Private>,
+        loader: ({ params }) => fetch(`https://brand-ass-10-server-cubouic43-mahmuda-sultanas-projects.vercel.app/products/${params.id}`)
       },
 
       {
         path: '/update/:id',
-        element: <Update></Update>,
-        loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
+        element: <Private><Update></Update></Private>,
+        loader: ({ params }) => fetch(`https://brand-ass-10-server-cubouic43-mahmuda-sultanas-projects.vercel.app/products/${params.id}`)
+      },
+
+      {
+        path: '/cart',
+        element: <Carts></Carts>,
+        loader: ({params}) => fetch(`http://localhost:5000/cart/${params.id}`)
       }
      
       

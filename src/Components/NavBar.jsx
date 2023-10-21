@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/Images/logo-no-background.png';
+import logo from '../assets/Images/logo1.png';
 
 const NavBar = () => {
     const navlinks = (
@@ -26,7 +26,11 @@ const NavBar = () => {
         <div className=' relative m-10 mt-[2.5rem] top-[39px]'>
             <div className="navbar bg-amber-100 rounded-2xl">
                 <div className="navbar-start w-4/5">
-                    <img className="w-[145px] h-[65px]" src={logo} alt="" />
+                    <img className="w-[111px] h-[76px]" src={logo} alt="" />
+                  
+                   <h2 className=" text-3xl font-serif ml-1 text-orange-700 " >SparkNest</h2>
+                   
+                   
                 </div>
                 <div className="navbar-end">{navlinks}</div>
             </div>

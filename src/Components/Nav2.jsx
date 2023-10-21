@@ -23,6 +23,7 @@ const Nav2 = () => {
 
                     <div className=" flex ">
                         <img className="mr-[21px] ml-[12px] w-10 rounded-full" src={user.photoURL} />
+                        <p className="mx-1">{user.displayName}</p>
                         <button onClick={handleLogOut} className="btn -mt-[8px] mr-[22px] ">Sign Out</button>
                     </div>
 
@@ -38,7 +39,7 @@ const Nav2 = () => {
     </>
     return (
         <div>
-            <div className="left-[900px] top-[58px] relative">
+            <div className="left-[831px] top-[58px] relative">
            
 
                 {navlinks}
