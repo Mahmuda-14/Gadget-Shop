@@ -62,7 +62,7 @@ const Detail = ({ detail }) => {
         };
 
 
-        fetch('http://localhost:5000/cart', {
+        fetch('https://brand-ass-10-server-qnopig852-mahmuda-sultanas-projects.vercel.app/cart', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -43,7 +43,7 @@ const Register = () => {
         toast('Registration Successfull');
 
         const user = { email };
-        fetch('http://localhost:5000/user',{
+        fetch('https://brand-ass-10-server-qnopig852-mahmuda-sultanas-projects.vercel.app/user',{
 
           method: 'POST',
           headers: {

@@ -23,7 +23,7 @@ const AddProduct = () => {
 
         // send data to the server
 
-        fetch('https://brand-ass-10-server-cubouic43-mahmuda-sultanas-projects.vercel.app/products', {
+        fetch('https://brand-ass-10-server-qnopig852-mahmuda-sultanas-projects.vercel.app/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

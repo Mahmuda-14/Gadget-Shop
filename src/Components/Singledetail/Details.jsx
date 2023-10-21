@@ -11,7 +11,7 @@ const Details = () => {
 
   useEffect(() => {
     // Fetch the product details based on the _id
-    fetch(`https://brand-ass-10-server-cubouic43-mahmuda-sultanas-projects.vercel.app/products/${id}`)
+    fetch(`https://brand-ass-10-server-qnopig852-mahmuda-sultanas-projects.vercel.app/products/${id}`)
       .then((response) => response.json())
       .then((data) => setDetail(data));
   }, [id]);

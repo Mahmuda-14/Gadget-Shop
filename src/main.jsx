@@ -51,25 +51,25 @@ const router = createBrowserRouter([
       {
         path: '/brands/:brand',
         element: <SingleBrands></SingleBrands>,
-        loader: () => fetch('https://brand-ass-10-server-cubouic43-mahmuda-sultanas-projects.vercel.app/products')
+        loader: () => fetch('https://brand-ass-10-server-qnopig852-mahmuda-sultanas-projects.vercel.app/products')
       },
 
       {
         path: '/products/:id',
         element: <Private><Details></Details></Private>,
-        loader: ({ params }) => fetch(`https://brand-ass-10-server-cubouic43-mahmuda-sultanas-projects.vercel.app/products/${params.id}`)
+        loader: ({ params }) => fetch(`https://brand-ass-10-server-qnopig852-mahmuda-sultanas-projects.vercel.app/products/${params.id}`)
       },
 
       {
         path: '/update/:id',
         element: <Private><Update></Update></Private>,
-        loader: ({ params }) => fetch(`https://brand-ass-10-server-cubouic43-mahmuda-sultanas-projects.vercel.app/products/${params.id}`)
+        loader: ({ params }) => fetch(`https://brand-ass-10-server-qnopig852-mahmuda-sultanas-projects.vercel.app/products/${params.id}`)
       },
 
       {
         path: '/cart',
         element: <Carts></Carts>,
-        loader: ({params}) => fetch(`http://localhost:5000/cart/${params.id}`)
+        loader: ({params}) => fetch(`https://brand-ass-10-server-qnopig852-mahmuda-sultanas-projects.vercel.app/${params.id}`)
       }
      
       

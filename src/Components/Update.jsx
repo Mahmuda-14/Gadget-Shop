@@ -27,7 +27,7 @@ const Update = () => {
         console.log(updatedItem);
 
         // send data to the server
-        fetch(`https://brand-ass-10-server-cubouic43-mahmuda-sultanas-projects.vercel.app/${_id}`, {
+        fetch(`https://brand-ass-10-server-qnopig852-mahmuda-sultanas-projects.vercel.app/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
