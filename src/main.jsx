@@ -69,7 +69,7 @@ const router = createBrowserRouter([
       {
         path: '/cart',
         element: <Carts></Carts>,
-        loader: ({params}) => fetch(`https://brand-ass-10-server-qnopig852-mahmuda-sultanas-projects.vercel.app/${params.id}`)
+        loader: () => fetch('https://brand-ass-10-server-qnopig852-mahmuda-sultanas-projects.vercel.app/cart')
       }
      
       

@@ -1,19 +1,20 @@
+/* eslint-disable react/prop-types */
 
 
-const MyCart = ({ element }) => {
+const MyCart = ({ cart }) => {
 
-    const { image, description } = element;
+    const { image, description } = cart;
 
 
     return (
         <div>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
+            <div className="card  w-96 h-[300px] bg-base-100 shadow-xl">
                 <img src={image}alt="" />
                 <div className="card-body">
-                    <h2 className="card-title">Shoes!</h2>
+                    
                     <p>{description}</p>
                     <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
+                        <button className="btn btn-primary">Delete</button>
                     </div>
                 </div>
             </div>
