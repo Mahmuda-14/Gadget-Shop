@@ -1,53 +1,4 @@
 
-// import { useEffect, useState } from "react";
-// import { getAuth } from "firebase/auth";
-// import app from "../../firebase/firebase.config";
-// import { useLoaderData, useParams } from "react-router-dom";
-// import MyCart from "./MyCart";
-
-// const Cart = () => {
-//   const auth = getAuth(app);
-//   const { id } = useParams();
-//   const item = useLoaderData();
-
-//   const [userEmail, setUserEmail] = useState("");
-//   console.log(item);
-
-//   useEffect(() => {
-//     if (auth.currentUser) {
-//       setUserEmail(auth.currentUser.email);
-
-//       fetch(`http://localhost:5000/cart/${id}`)
-//         .then((response) => response.json())
-//         .then((data) => {
-//           console.log(data);
-//           // Assuming 'data' is an array of cart items, you can set it to 'item'
-//           // so that you can map over it in the render.
-//           // item = data;
-//         })
-//         .catch((error) => console.error(error));
-//     }
-//   }, [auth, id]);
-
-//   return (
-//     <div>
-//       <h1>Shopping Cart</h1>
-//       {auth.currentUser ? (
-//         <p>User Email: {userEmail}</p>
-//       ) : (
-//         <p>Please log in to see your cart.</p>
-//       )}
-//       <ul>
-//         {item.map((element) => 
-//           <MyCart key={element.id} element={element}></MyCart>
-//         )}
-//       </ul>
-//     </div>
-//   );
-// };
-
-// export default Cart;
-
 
 // import { useEffect } from "react";
 // // import { getAuth } from "firebase/auth";
@@ -75,7 +26,7 @@
 //         .catch((error) => {
 //           console.error("Error fetching cart data", error);
 //         });
-    
+
 //   }, [id]);
 
 //   return (
@@ -90,7 +41,7 @@
 //         {item.map((cartItem) => (
 //           <li key={cartItem.id}>
 //             <p>Product: {cartItem.description}</p>
-//             {/* Add other cart item details here */}
+//             {/* Add other cart itemCarts here */}
 //           </li>
 //         ))}
 //       </ul>
@@ -112,14 +63,40 @@
 
 
 
-
+import { useEffect, useState } from "react";
+// import Detail from "./Detail";
+import { useLoaderData, useParams } from "react-router-dom";
+import MyCart from "./MyCart";
 
 const Carts = () => {
+  const [detail, setDetail] = useState();
+  const item =useLoaderData();
+
+  const { id } = useParams();
+
+  useEffect(() => {
+    // Fetch the productCarts based on the _id
+    fetch(`https://brand-ass-10-server-qnopig852-mahmuda-sultanas-projects.vercel.app/cart/${id}`)
+      .then((response) => response.json())
+      .then((data) => setDetail(data));
+  }, [id]);
+
+
+
+
   return (
     <div>
-      
+      <div>
+
+        {
+
+          detail.map(element => <MyCart key={element.id} detail={element}></MyCart>)
+        }
+        
+      </div>
     </div>
   );
 };
 
 export default Carts;
+

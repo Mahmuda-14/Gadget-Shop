@@ -30,7 +30,7 @@ const Root = () => {
           
 
             <div className=" bg-white dark:bg-black flex flex-col-reverse">
-                <button className="bg-green-200 p-4 rounded-3xl ml-[40rem] mr-[40rem] mx-2" onClick={handleThemeSwitch}>
+                <button className="bg-green-200 p-4 rounded-3xl ml-[40rem] mr-[40rem] my-8" onClick={handleThemeSwitch}>
                     Dark Mode
                 </button>
                 <div>
