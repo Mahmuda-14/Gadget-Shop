@@ -23,7 +23,7 @@ const Carts = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-3">
+      <div className="grid sm:grid-cols-1 lg:grid-cols-3">
         {cart.map((cart) => 
           <MyCart key={cart._id} cart={cart}></MyCart>
         )}
