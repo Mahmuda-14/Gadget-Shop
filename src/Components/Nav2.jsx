@@ -17,7 +17,7 @@ const Nav2 = () => {
 
     const navlinks = <>
 
-        <ul className="flex  sm:ml-[128px] sm:mb-10 lg:ml-[230px]">
+        <ul className="flex lg:ml-[230px]">
             {
                 user ?
 
