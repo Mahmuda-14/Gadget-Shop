@@ -1,5 +1,5 @@
 import ban from '../assets/Images/banner-4.jpg'
-import Banner from './Banner';
+// import Banner from './Banner';
 import Cards from './BrandCard/Cards';
 import Footer from './Footer';
 import Nav2 from './Nav2';
@@ -18,15 +18,15 @@ const Home = () => {
     <section className='mx-auto'>
       
     
-      <div className="w-[1550px] h-[794px] relative bg-no-repeat bg-cover -top-[40px]" style={{ backgroundImage: `url(${ban}` }}>
+      <div className="max-w-[1400px] h-[794px] bg-no-repeat bg-cover -top-[40px]" style={{ backgroundImage: `url(${ban}` }}>
       
         <Nav2></Nav2>
 
         <NavBar></NavBar>
 
-        <Banner>
+        {/* <Banner>
           
-        </Banner>
+        </Banner> */}
 
       </div>
 
