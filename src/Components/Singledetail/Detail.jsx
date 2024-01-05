@@ -1,21 +1,28 @@
 
 
 /* eslint-disable react/prop-types */
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { AuthContext } from '../Provider/AuthProvider';
 const Detail = ({ detail }) => {
-    const { image, description } = detail;
+    const { name,brand, type, image, description } = detail;
+    const {user} = useContext(AuthContext)
      // Get the email from the route parameters
 
     const handleAdd = (event) => {
         event.preventDefault();
+       const Email = user.email
 
 
         const cartItem = {
 
-            description: description,
+            name : name,
+            brand: brand,
+            type: type,
             image: image,
+            email : Email
 
         };
 
