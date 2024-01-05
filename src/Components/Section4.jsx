@@ -7,6 +7,7 @@ const Section4 = () => {
        <div className=' mx-10'>
         <div>
             <h2 className=' items-center text-center text-3xl font-mono font-semibold'>Product Catagories</h2>
+            <div className="sm:ml-[67px] sm:mr-[207px] sm:mt-[10px] lg:mx-[588px] lg:mt-[10px]" style={{ background: 'linear-gradient(to bottom right, #ff3e00, #ffbe30), #333333', paddingRight: '100px', height: '5px' }}></div>
            
         </div>
         <hr  className='  mx-[32rem] my-10'/>

@@ -6,18 +6,18 @@ import MyCart from "./MyCart";
 const Carts = () => {
   const [cart, setCart] = useState([]);
   const { _id } = useParams();
-  // const item = useLoaderData();
+ 
 
   useEffect(() => {
-    // Fetch the productCarts based on the _id
+   
     fetch('https://brand-ass-10-server-qnopig852-mahmuda-sultanas-projects.vercel.app/cart')
       .then((response) => response.json())
       .then((data) => {
-        setCart(data); // Update the component state with fetched data
+        setCart(data); 
       })
       .catch((error) => {
         console.error("Error fetching cart data:", error);
-        // Handle the error, e.g., show an error message to the user
+        
       });
   }, [_id]);
 

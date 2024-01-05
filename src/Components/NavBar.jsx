@@ -23,7 +23,7 @@ const NavBar = () => {
     );
 
     return (
-        <div className=' relative mx-10'>
+        <div className=' relative mx-10 mt-7'>
             <div className="navbar bg-amber-100 rounded-2xl">
                 <div className="navbar-start w-4/5">
                     <img className="w-[111px] h-[76px]" src={logo} alt="" />

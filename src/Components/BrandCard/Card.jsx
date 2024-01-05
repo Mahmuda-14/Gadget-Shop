@@ -11,13 +11,13 @@ const Card = ({ element }) => {
     return (
         <div>
           <Link to={`/brands/${logoName}`}>
-            <div className="card w-[14rem] shadow-xl  card-side bg-opacity-60 hero-overlay">
+            <div className="card w-[12rem] shadow-xl  card-side bg-opacity-60 hero-overlay">
           
 
                 <img src={imageURL} alt="" className="rounded-full w-[91px] h-[95px] p-3" />
                 
                 <div className="card-body ">
-                    <h2 className="card-title">{logoName}</h2>
+                    <h2 className="card-title -ml-[28px]">{logoName}</h2>
                 </div>
             </div>
             </Link>
